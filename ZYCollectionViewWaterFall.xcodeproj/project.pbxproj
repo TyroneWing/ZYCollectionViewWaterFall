@@ -15,6 +15,9 @@
 		197C0DFB1C8FB3E800AFE769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197C0DF91C8FB3E800AFE769 /* LaunchScreen.storyboard */; };
 		197C0E061C8FB3E800AFE769 /* ZYCollectionViewWaterFallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197C0E051C8FB3E800AFE769 /* ZYCollectionViewWaterFallTests.m */; };
 		197C0E111C8FB3E800AFE769 /* ZYCollectionViewWaterFallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197C0E101C8FB3E800AFE769 /* ZYCollectionViewWaterFallUITests.m */; };
+		197C0E201C8FB45A00AFE769 /* ZYWaterFallCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 197C0E1F1C8FB45A00AFE769 /* ZYWaterFallCollectionViewFlowLayout.m */; };
+		197C0E261C8FB53400AFE769 /* WaterFallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197C0E251C8FB53400AFE769 /* WaterFallViewController.m */; };
+		197C0E291C8FB59700AFE769 /* WaterFallCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 197C0E281C8FB59700AFE769 /* WaterFallCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		197C0E0C1C8FB3E800AFE769 /* ZYCollectionViewWaterFallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYCollectionViewWaterFallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		197C0E101C8FB3E800AFE769 /* ZYCollectionViewWaterFallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionViewWaterFallUITests.m; sourceTree = "<group>"; };
 		197C0E121C8FB3E800AFE769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		197C0E1E1C8FB45900AFE769 /* ZYWaterFallCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWaterFallCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		197C0E1F1C8FB45A00AFE769 /* ZYWaterFallCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWaterFallCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		197C0E241C8FB53400AFE769 /* WaterFallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterFallViewController.h; path = ../WaterFallViewController.h; sourceTree = "<group>"; };
+		197C0E251C8FB53400AFE769 /* WaterFallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaterFallViewController.m; path = ../WaterFallViewController.m; sourceTree = "<group>"; };
+		197C0E271C8FB59700AFE769 /* WaterFallCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterFallCollectionViewCell.h; path = ../WaterFallCollectionViewCell.h; sourceTree = "<group>"; };
+		197C0E281C8FB59700AFE769 /* WaterFallCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaterFallCollectionViewCell.m; path = ../WaterFallCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				197C0DEF1C8FB3E800AFE769 /* AppDelegate.m */,
 				197C0DF11C8FB3E800AFE769 /* ViewController.h */,
 				197C0DF21C8FB3E800AFE769 /* ViewController.m */,
+				197C0E1E1C8FB45900AFE769 /* ZYWaterFallCollectionViewFlowLayout.h */,
+				197C0E1F1C8FB45A00AFE769 /* ZYWaterFallCollectionViewFlowLayout.m */,
+				197C0E271C8FB59700AFE769 /* WaterFallCollectionViewCell.h */,
+				197C0E281C8FB59700AFE769 /* WaterFallCollectionViewCell.m */,
+				197C0E241C8FB53400AFE769 /* WaterFallViewController.h */,
+				197C0E251C8FB53400AFE769 /* WaterFallViewController.m */,
 				197C0DF41C8FB3E800AFE769 /* Main.storyboard */,
 				197C0DF71C8FB3E800AFE769 /* Assets.xcassets */,
 				197C0DF91C8FB3E800AFE769 /* LaunchScreen.storyboard */,
@@ -272,6 +287,9 @@
 			files = (
 				197C0DF31C8FB3E800AFE769 /* ViewController.m in Sources */,
 				197C0DF01C8FB3E800AFE769 /* AppDelegate.m in Sources */,
+				197C0E261C8FB53400AFE769 /* WaterFallViewController.m in Sources */,
+				197C0E291C8FB59700AFE769 /* WaterFallCollectionViewCell.m in Sources */,
+				197C0E201C8FB45A00AFE769 /* ZYWaterFallCollectionViewFlowLayout.m in Sources */,
 				197C0DED1C8FB3E800AFE769 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZYCollectionViewWaterFall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TyroneWing.ZYCollectionViewWaterFall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZYCollectionViewWaterFall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TyroneWing.ZYCollectionViewWaterFall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
